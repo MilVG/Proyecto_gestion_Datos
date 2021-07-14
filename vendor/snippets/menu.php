@@ -34,6 +34,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Adminitración:</h6>
+                <a class="collapse-item" href="usuarios.php">Lista</a>
                 <a class="collapse-item" href="nuevousuario.php">Nuevo</a>
                 <a class="collapse-item" href="eliminarUsuario.php">Eliminar</a>
             </div>
