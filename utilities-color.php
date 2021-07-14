@@ -371,6 +371,7 @@
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                             <form>
+                                                <input type="hidden" name="idb" id="idb" value="">
                                                 <div class="modal-header">
                                                     <div class="modal-title">
                                                         <h3>Solicitudes</h3>

@@ -15,8 +15,8 @@ while($reg = $rs->fetchObject()){
                     <td>$reg->IDSOLICITUD</td>
 					<td>
 
-						<button class='btn btn-info' type='button' onclick='editar()'>Editar</button>
-						<button class='btn btn-danger' type='button' onclick='eliminar()'>Eliminar</button>
+						<button class='btn btn-info' type='button' onclick='editarbienes($reg->ID)'>Editar</button>
+						<button class='btn btn-danger' type='button' onclick='eliminarbienes($reg->ID)'>Eliminar</button>
 						
 					</td>
 				</tr>
