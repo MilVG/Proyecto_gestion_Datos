@@ -233,7 +233,7 @@
                     <div class="row">
 
                         <!-- First Column -->
-                        <div class="col-lg-8">
+                        <div class="col-lg-9">
 
                             <!-- Custom Text Color Utilities -->
                             <div class="card shadow mb-4">
@@ -273,6 +273,7 @@
                                                     <th>Fecha</th>
                                                     <th>C.Costos</th>
                                                     <th>R.Presupuestal</th>
+                                                    <td>Verificacion</td>
                                                     <th colspan="2">Acciones</th>
                                                 </tr>
                                             </thead>
@@ -312,6 +313,10 @@
                                                         <label class="col-form-label">Rubro Presupuestal:</label>
                                                         <input type="text" name="txtrubpre" id="txtrubpre" class="form-control" value="">
                                                     </div>
+                                                    <div class="form-group">
+                                                        <label class="col-form-label">Verificacion de Solicitud:</label>
+                                                        <input type="text" name="txtveri" id="txtveri" class="form-control" value="">
+                                                    </div>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
@@ -324,7 +329,7 @@
                             </div>
                         </div>
                         <!-- Second Column -->
-                        <div class="col-lg-8">
+                        <div class="col-lg-9">
 
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
@@ -405,7 +410,7 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-                                                    <button class="btn btn-primary" type="button" onclick="guardarbienes()">Guardar</button>
+                                                    <button class="btn btn-primary" type="button"  onclick="guardarbienes()">Guardar</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -499,4 +504,5 @@
 </body>
 <script>listar()</script>
 <SCript>listarbienes()</SCript>
+<script>bloq()</script>
 </html>

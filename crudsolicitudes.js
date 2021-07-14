@@ -25,11 +25,12 @@ function insertar() {
   var fecha = $("#txtfecha").val();
   var centrocos = $("#txtcencos").val();
   var rubropro = $("#txtrubpre").val();
+  var veri = $("#txtveri").val();
 
   $.ajax({
     url: "insertsolicitudes.php",
     type: "post",
-    data: { id: id, fecha: fecha, centrocos: centrocos, rubropro: rubropro },
+    data: { "id": id, "fecha": fecha, "centrocos": centrocos, "rubropro": rubropro,"veri":veri },
     success: function (data) {
       console.log(data);
       listar();
@@ -62,6 +63,7 @@ function editar(id) {
       $("#txtfecha").val(datos.FECHA);
       $("#txtcencos").val(datos.CENTRO_COSTOS);
       $("#txtrubpre").val(datos.RUBRO_PRESUPUESTAL);
+      $("#txtveri").val(datos.COL_STATUS);
       $("#modalfrm").modal("show");
     },
   });
@@ -72,16 +74,18 @@ function actualizar() {
   var fecha = $("#txtfecha").val();
   var centrocos = $("#txtcencos").val();
   var rubropro = $("#txtrubpre").val();
+  var veri = $("#txtveri").val();
 
   $.ajax({
     url: "actualizarsolicitudes.php",
     type: "post",
     data: {
-      ids: ids,
-      id: id,
-      fecha: fecha,
-      centrocos: centrocos,
-      rubropro: rubropro,
+      "ids": ids,
+      "id": id,
+      "fecha": fecha,
+      "centrocos": centrocos,
+      "rubropro": rubropro,
+      "veri":veri,
     },
     success: function (data) {
       console.log(data);
@@ -96,6 +100,7 @@ function nuevo() {
   $("#txtfecha").val("");
   $("#txtcencos").val("");
   $("#txtrubpre").val("");
+  $("#txtveri").val("");
   $("#modalfrm").modal("show");
 }
 
@@ -105,5 +110,15 @@ function guardar() {
     actualizar();
   } else {
     insertar();
+  }
+}
+
+function bloq() {
+  var v = $("#veri").val();
+  if (v == 0) {
+    console.log(v);
+    $("#veri").prop("disabled", true);
+  } else {
+    $("#veri").prop("disabled", false);
   }
 }

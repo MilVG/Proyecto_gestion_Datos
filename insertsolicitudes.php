@@ -4,8 +4,9 @@ $ID = $_POST['id'];
 $FECHA = $_POST['fecha'];
 $CENC = $_POST['centrocos'];
 $RUNPRE = $_POST['rubropro'];
-$sql="INSERT INTO SOLICITUDES (IDRESPONSBLE,FECHA,CENTRO_COSTOS,RUBRO_PRESUPUESTAL) 
-		VALUES('$ID','$FECHA','$CENC','$RUNPRE')";
+$VERI = $_POST['verificacion'];
+$sql="INSERT INTO SOLICITUDES (IDRESPONSBLE,FECHA,CENTRO_COSTOS,RUBRO_PRESUPUESTAL,COL_STATUS) 
+		VALUES('$ID','$FECHA','$CENC','$RUNPRE','$VERI')";
 $cnx->query($sql) or die("error $sql");
 echo "ok";
  ?>
