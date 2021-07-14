@@ -113,12 +113,16 @@ function guardar() {
   }
 }
 
-function bloq() {
-  var v = $("#veri").val();
-  if (v == 0) {
-    console.log(v);
-    $("#veri").prop("disabled", true);
-  } else {
-    $("#veri").prop("disabled", false);
-  }
-}
+// function bloq() {
+//   var 
+
+
+//   var v = $("#veri").val();
+//   if (v == 0) {
+//     console.log(v);
+//     $("#veri").prop("disabled", true);
+//   } else {
+//     $("#veri").prop("disabled", false);
+//   }
+// }
+

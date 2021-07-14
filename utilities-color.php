@@ -277,7 +277,7 @@
                                                     <th colspan="2">Acciones</th>
                                                 </tr>
                                             </thead>
-                                            <tbody id="registros">
+                                            <tbody id="registros" class="prueba">
                                 
                                             </tbody>
                                         </table>
@@ -504,5 +504,5 @@
 </body>
 <script>listar()</script>
 <SCript>listarbienes()</SCript>
-<script>bloq()</script>
+<!-- <script>bloq()</script> -->
 </html>
