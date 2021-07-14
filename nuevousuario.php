@@ -1,4 +1,5 @@
 <?php include 'vendor/snippets/head.php' ?>
+<script src="js/Usuarios/crudUsuarios.js"></script>
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -222,48 +223,62 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Codigo en DB</h1>
-                    <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                        For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
+                    <!-- <h1 class="h3 mb-4 text-gray-800">Codigo en DB</h1> -->
+                    <p class="mb-4">Se ejecuta procedimiento almacenado para insertar usuario</a>.</p>
                 </div>
 
                 <!-- /.container-fluid -->
-                <div class="container">
-                    <code>
-                        SELECT FirstName, LastName, Department  
-                        FROM HumanResources.vEmployeeDepartmentHistory  
-                        WHERE FirstName = @FirstName AND LastName = @LastName  
-                            AND EndDate IS NULL;  
+                <div class="ml-5 row">
+                    <code class="col-sm-4">
+                    CREATE PROC PROC_INSERT_USERS(
+                        @NOMBRE VARCHAR(60) ,
+                        @ROL VARCHAR(20) ,
+                        @CEDULA CHAR(10))
+                        AS
+                        INSERT INTO USUARIOS(NOMBRE,ROL,CEDULA) VALUES (@NOMBRE,@ROL,@CEDULA)
+                        GO 
 
                     </code>
                 </div>
-                <div class="container-fluid">
+                <div class="container-fluid mt-5">
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Nuevo Usuario</h1>
                    
 
                     <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
+                    <div class="card shadow mb-4 p-3">
                       <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <label for="exampleInputEmail1">NOMBRES</label>
+                            <input type="text" class="form-control" id="nombres" placeholder="Nombre usuario">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="exampleInputPassword1">CEDULA</label>
+                            <input type="text" class="form-control" id="cedula" placeholder="72450895">
                         </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <label for="">ROL</label>
+                        <select class="form-control" name="cedula" id="cedula" >
+                         
+                            <option value="ADMINISTRADOR">ADMINISTRADOR</option>
+                            <option value="VENDEDOR">VENDEDOR</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary mt-3" onclick="guardar()">REGISTRAR USUARIO</button>
                         </form>
                     </div>
-
+                   
                 </div>
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Logs de registros</h1>
+
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4 p-3">
+                      aqui tabla logs
+                    </div>
+
+                    </div>
             </div>
             <!-- End of Main Content -->
 
