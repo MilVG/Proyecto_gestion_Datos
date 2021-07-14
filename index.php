@@ -270,7 +270,17 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Solicitudes Recibidas</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                                <?php
+                                                                    require_once "conexionsql.php";
+                                                                    $sql = "EXEC COUNT_SOLICITUDES";
+                                                                    $rs = $cnx->query($sql) or die("error $sql");
+                                                                    $resultado = "";
+                                                                    while ($reg = $rs->fetchObject()) {
+                                                                        $resultado .= '<div class="h5 mb-0 font-weight-bold text-gray-800">'.$reg->NUMERO.'</div>';
+                                                                    }
+                                                                    echo $resultado
+                                            ?>
+                                         
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -291,13 +301,34 @@
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                    <?php
+                                                                        require_once "conexionsql.php";
+                                                                        $sql = "EXEC COUNT_SOLICITUDES";
+                                                                        $rs = $cnx->query($sql) or die("error $sql");
+                                                                        $resultado = "";
+                                                                        while ($reg = $rs->fetchObject()) {
+                                                                            $resultado .= '<div class="h5 mb-0 font-weight-bold text-gray-800">'.$reg->NUMERO.'</div>';
+                                                                        }
+                                                                        echo $resultado
+                                                ?>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
+                                                    <?php
+                                                                    require_once "conexionsql.php";
+                                                                    $sql = "EXEC COUNT_SOLICITUDES";
+                                                                    $rs = $cnx->query($sql) or die("error $sql");
+                                                                    $resultado = "";
+                                                                    while ($reg = $rs->fetchObject()) {?>
+                    
+                                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                                        style="width:<?php  echo $resultado ?>" aria-valuenow="<?php  echo $resultado ?>" aria-valuemin="0"
+                                                                        aria-valuemax="100"></div>
+                                                                        <?php
+                                                                    }
+                                                                    echo $resultado
+                                            ?>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -318,7 +349,16 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                FACTURAS EMITIDAS</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                               <?php
+                                                                        require_once "conexionsql.php";
+                                                                        $sql = "EXEC COUNT_FACT";
+                                                                        $rs = $cnx->query($sql) or die("error $sql");
+                                                                        $resultado = "";
+                                                                        while ($reg = $rs->fetchObject()) {
+                                                                            $resultado .= '<div class="h5 mb-0 font-weight-bold text-gray-800">'.$reg->NUMERO.'</div>';
+                                                                        }
+                                                                        echo $resultado
+                                                ?>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>
