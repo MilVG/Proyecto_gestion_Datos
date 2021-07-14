@@ -52,10 +52,10 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Administrativas:</h6>
-                        <a class="collapse-item active" href="utilities-color.html">Gestion de Compra</a>
-                        <a class="collapse-item" href="utilities-border.html">Gestión Almacen</a>
-                        <a class="collapse-item" href="utilities-animation.html">Gestion Inventario</a>
-                        <a class="collapse-item" href="utilities-other.html">Otros</a>
+                        <a class="collapse-item active" href="utilities-color.php">Gestion de Compra</a>
+                        <a class="collapse-item" href="utilities-border.php">Gestión Almacen</a>
+                        <a class="collapse-item" href="utilities-animation.php">Gestion Inventario</a>
+                        <a class="collapse-item" href="utilities-other.php">Otros</a>
                     </div>
                 </div>
             </li>
