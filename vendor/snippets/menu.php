@@ -28,15 +28,15 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
+            <i class="fas fa-fw fa-user"></i>
             <span>Usuarios</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Adminitración:</h6>
-                <a class="collapse-item" href="usuarios.php">Lista</a>
-                <a class="collapse-item" href="nuevousuario.php">Nuevo</a>
-                <a class="collapse-item" href="eliminarUsuario.php">Eliminar</a>
+                <a class="collapse-item" href="usuarios.php">Lista Usuarios</a>
+                <a class="collapse-item" href="nuevousuario.php">Nuevo Usuario</a>
+                <a class="collapse-item" href="eliminarUsuario.php">Imprimir reporte</a>
             </div>
         </div>
     </li>
