@@ -252,17 +252,18 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">NOMBRES</label>
                             <input type="text" class="form-control" id="nombres" placeholder="Nombre usuario">
-                            <small id="emailHelp" class="form-text text-muted">Apllidos y nombres.</small>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">CEDULA</label>
                             <input type="text" class="form-control" id="cedula" placeholder="72450895">
                         </div>
-                        <select class="form-control form-control-lg" name="cedula" id="cedula" >
+                        <label for="">ROL</label>
+                        <select class="form-control" name="cedula" id="cedula" >
+                         
                             <option value="ADMINISTRADOR">ADMINISTRADOR</option>
                             <option value="VENDEDOR">VENDEDOR</option>
                         </select>
-                        <button type="submit" class="btn btn-primary mt-2" onclick="guardar()">REGISTRAR USUARIO</button>
+                        <button type="submit" class="btn btn-primary mt-3" onclick="guardar()">REGISTRAR USUARIO</button>
                         </form>
                     </div>
                    
