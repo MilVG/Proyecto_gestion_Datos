@@ -29,6 +29,17 @@ function guardar() {
     });
   
 }
+function eliminar(id) {
+  $.ajax({
+    url: "eliminarsolicitudes.php",
+    type: "post",
+    data: { "id": id },
+    success: function (data) {
+      console.log(data);
+        listar();
+    },
+  });
+}
 
 function nuevo() {
   $("#txtid").val("");
