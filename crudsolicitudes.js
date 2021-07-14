@@ -112,6 +112,14 @@ function guardar() {
     insertar();
   }
 }
+function neworden() {
+  $("#txtid").val("");
+  $("#txtfecha").val("");
+  $("#txtcencos").val("");
+  $("#txtrubpre").val("");
+  $("#txtveri").val("");
+  $("#modalorden").modal("show");
+}
 
 // function bloq() {
 //   var 

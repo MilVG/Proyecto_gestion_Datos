@@ -2,7 +2,7 @@
 <?php
 
     $driver   = 'sqlsrv';
-    $servidor = 'RONY-VELASQUEZ';
+    $servidor = 'MILTON\SQLEXPRESS';
     $usuario  = 'sa';
     $clave    = '1234';
     $base     = 'EDUCANDOSA';

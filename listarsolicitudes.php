@@ -18,7 +18,7 @@ $resultado="";
 							<button class='btn btn-info' type='button' onclick='editar($reg->ID)'>Editar</button>
 							<button class='btn btn-danger' type='button' onclick='eliminar($reg->ID)'>Eliminar</button>
 							
-							<button name='veri' id='veri$reg->ID' class='btn btn-success item' type='button' value='$reg->COL_STATUS' onchange='' onclick='bloq()'>ORDEN</button>
+							<button name='veri' id='veri$reg->ID' class='btn btn-success item' type='button' value='$reg->COL_STATUS' onchange='' onclick='neworden()'>ORDEN</button>
 							
 						</td>
 					</tr>
@@ -40,11 +40,11 @@ function bloq(){
 	   if(st==0){
 		$("#"+idItem+"").prop('disabled',true);
 	   }else{
-		$("#"+idItem+"").prop('disabled',false);  
+		$("#"+idItem+"").prop('disabled',false); 
 	   }
 
 		  
-      });
+     });
   }
 }
 </script>

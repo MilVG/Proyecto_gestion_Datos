@@ -327,6 +327,52 @@
                                     </div>
                                 </div>
                             </div>
+                            <div>
+                                <div id="modalorden" class="modal fade">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <form>
+                                                <input type="hidden" name="idsoli" id="idsoli" value="">
+                                                <div class="modal-header">
+                                                    <div class="modal-title">
+                                                        <h3>ORDEN CONTRACTUAL</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label class="col-form-label">Numero de Orden:</label>
+                                                        <input type="text" name="txtid" id="txtid" class="form-control" value="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-form-label">Proveedor:</label>
+                                                        <input type="text" name="txtfecha" id="txtfecha" class="form-control" value="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-form-label">Fecha Orden:</label>
+                                                        <input type="text" name="txtcencos" id="txtcencos" class="form-control" value="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-form-label">Monto Total:</label>
+                                                        <input type="text" name="txtrubpre" id="txtrubpre" class="form-control" value="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-form-label">Fecha de Entrega:</label>
+                                                        <input type="text" name="txtveri" id="txtveri" class="form-control" value="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-form-label">RUC:</label>
+                                                        <input type="text" name="txtveri" id="txtveri" class="form-control" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                                    <button class="btn btn-primary" type="button" onclick="guardar()">Guardar</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- Second Column -->
                         <div class="col-lg-9">
