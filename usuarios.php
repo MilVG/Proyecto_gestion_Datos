@@ -225,7 +225,12 @@
 <h1 class="h3 mb-2 text-gray-800">Lista usuarios</h1>
 <p class="mb-4">Se aplica el siguiente código</p>
 <code class="ml-2">
-SELECT * FROM USUARIOS
+        CREATE PROC LIST_USERS
+        AS 
+        SELECT * FROM USUARIOS
+
+        GO
+        EXEC LIST_USERS
 </code>
 
 <!-- DataTales Example -->
@@ -250,7 +255,7 @@ SELECT * FROM USUARIOS
                 <tbody>
                      <?php
                         require_once "conexionsql.php";
-                        $sql = "SELECT * FROM USUARIOS";
+                        $sql = "EXEC LIST_USERS";
                         $rs = $cnx->query($sql) or die("error $sql");
 
                         $resultado = "";

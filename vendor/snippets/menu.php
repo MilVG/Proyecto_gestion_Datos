@@ -31,7 +31,7 @@
             <i class="fas fa-fw fa-user"></i>
             <span>Usuarios</span>
         </a>
-        <div id="collapseUser" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseUser" class="collapse" aria-labelledby="headingTwo" data-parent="#collapseUser">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Adminitración:</h6>
                 <a class="collapse-item" href="usuarios.php">Lista Usuarios</a>
@@ -48,11 +48,11 @@
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Gestion Administrativa</span>
                 </a>
-                <div id="collapseAdmin" class="collapse show" aria-labelledby="headingUtilities"
+                <div id="collapseAdmin" class="collapse " aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Administrativas:</h6>
-                        <a class="collapse-item active" href="utilities-color.html">Gestion de Compra</a>
+                        <a class="collapse-item " href="utilities-color.html">Gestion de Compra</a>
                         <a class="collapse-item" href="utilities-border.html">Gestión Almacen</a>
                         <a class="collapse-item" href="utilities-animation.html">Gestion Inventario</a>
                         <a class="collapse-item" href="utilities-other.html">Otros</a>
@@ -67,11 +67,11 @@
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Rportes</span>
                 </a>
-                <div id="collapseReport" class="collapse show" aria-labelledby="collapseReport"
+                <div id="collapseReport" class="collapse" aria-labelledby="collapseReport"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Compras:</h6>
-                        <a class="collapse-item active" href="utilities-color.html">Inventario</a>
+                        <a class="collapse-item " href="utilities-color.html">Inventario</a>
                         <a class="collapse-item" href="utilities-border.html">Almacen</a>
                         <a class="collapse-item" href="utilities-animation.html">Provedor y Bienes</a>
                         <a class="collapse-item" href="utilities-other.html">Otros</a>
