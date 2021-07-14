@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>SB Admin 2 - Color Utilities</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
-    <script src="crudsolicitudes.js"></script>
-
-</head>
+<?php include 'vendor/snippets/head.php'?>
 
 <body id="page-top">
 
@@ -30,121 +6,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-            </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Interface
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Gestion Administrativa</span>
-                </a>
-                <div id="collapseUtilities" class="collapse show" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Administrativas:</h6>
-                        <a class="collapse-item active" href="utilities-color.html">Gestion de Compra</a>
-                        <a class="collapse-item" href="utilities-border.html">Gestión Almacen</a>
-                        <a class="collapse-item" href="utilities-animation.html">Gestion Inventario</a>
-                        <a class="collapse-item" href="utilities-other.html">Otros</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-        </ul>
+        <?php include 'vendor/snippets/menu.php'?>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -361,151 +223,106 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-1 text-gray-800">Gestión de Compras</h1>
-                    <p class="mb-4">Las solicitudes deberan ser autorizadas por el jefe de Area de Lo contrario<a
-                            href="#">Revisa</a> Las diferentes secciones Mostradas deberan Ser llenadas por el administrador que este a cargo de esta área.</p>
+                    <h1 class="h3 mb-1 text-gray-800">Animation Utilities</h1>
+                    <p class="mb-4">Bootstrap's default utility classes can be found on the official <a
+                            href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
+                        below were created to extend this theme past the default utility classes built into Bootstrap's
+                        framework.</p>
 
                     <!-- Content Row -->
                     <div class="row">
 
-                        <!-- First Column -->
+                        <!-- Grow In Utility -->
                         <div class="col-lg-6">
 
-                            <!-- Custom Text Color Utilities -->
-                            <div class="card shadow mb-4">
+                            <div class="card position-relative">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Solicitudes</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Grow In Animation Utilty</h6>
                                 </div>
                                 <div class="card-body">
-
-                                    <button type="submit" class="btn btn-outline-success btn-lg btn-block" onclick="nuevo()">Agregar</button>
-                                    <!-- <p class="text-gray-100 p-3 bg-dark m-0">.text-gray-100</p>
-                                    <p class="text-gray-200 p-3 bg-dark m-0">.text-gray-200</p>
-                                    <p class="text-gray-300 p-3 bg-dark m-0">.text-gray-300</p>
-                                    <p class="text-gray-400 p-3 bg-dark m-0">.text-gray-400</p>
-                                    <p class="text-gray-500 p-3 m-0">.text-gray-500</p>
-                                    <p class="text-gray-600 p-3 m-0">.text-gray-600</p>
-                                    <p class="text-gray-700 p-3 m-0">.text-gray-700</p>
-                                    <p class="text-gray-800 p-3 m-0">.text-gray-800</p>
-                                    <p class="text-gray-900 p-3 m-0">.text-gray-900</p> -->
-                                </div>
-                            </div>
-
-                            <!-- Custom Font Size Utilities -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Registros de Solicitudes</h6>
-                                </div>
-                                <div class="table-responsive">
-                                    <div class="table-wrapper">
-                                        <div class="table-title">
-                                        </div>
-                                        <table class="table table-striped table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th>IDRESPONSABLE</th>
-                                                    <th>FECHA</th>
-                                                    <th>CENTRO COSTOS</th>
-                                                    <th>RUBRO PRESUPUESTAL</th>
-                                                    <th colspan="2">Acciones</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="registros">
-                                
-                                            </tbody>
-                                        </table>
+                                    <div class="mb-3">
+                                        <code>.animated--grow-in</code>
                                     </div>
-                                </div>
-                                    
-                            </div>
-
-                            </div>
-                            <div>
-                                <div id="modalfrm" class="modal fade">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <form>
-                                                <div class="modal-header">
-                                                    <div class="modal-title">
-                                                        <h3>Solicitudes</h3>
-                                                    </div>
+                                    <div class="small mb-1">Navbar Dropdown Example:</div>
+                                    <nav class="navbar navbar-expand navbar-light bg-light mb-4">
+                                        <a class="navbar-brand" href="#">Navbar</a>
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Dropdown
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right animated--grow-in"
+                                                    aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
                                                 </div>
-                                                <div class="modal-body">
-                                                    <div class="form-group">
-                                                        <label class="col-form-label">Codigo de Responsable:</label>
-                                                        <input type="text" name="txtid" id="txtid" class="form-control" value="">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-form-label">Fecha:</label>
-                                                        <input type="text" name="txtfecha" id="txtfecha" class="form-control" value="">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-form-label">Centro de Costos:</label>
-                                                        <input type="text" name="txtcencos" id="txtcencos" class="form-control" value="">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-form-label">Rubro Presupuestal:</label>
-                                                        <input type="text" name="txtrubpre" id="txtrubpre" class="form-control" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-                                                    <button class="btn btn-primary" type="button" onclick="guardar()">Guardar</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <p class="mb-0 small">Note: This utility animates the CSS transform property,
+                                        meaning it will override any existing transforms on an element being animated!
+                                        In this theme, the grow in animation is only being used on dropdowns within the
+                                        navbar.</p>
                                 </div>
                             </div>
-                            
 
                         </div>
 
-                        <!-- Second Column -->
-                        <!-- <div class="col-lg-4"> -->
+                        <!-- Fade In Utility -->
+                        <div class="col-lg-6">
 
-                            <!-- Background Gradient Utilities -->
-                            <!-- <div class="card shadow mb-4">
+                            <div class="card position-relative">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Custom Background Gradient Utilities
-                                    </h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Fade In Animation Utilty</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="px-3 py-5 bg-gradient-primary text-white">.bg-gradient-primary</div>
-                                    <div class="px-3 py-5 bg-gradient-secondary text-white">.bg-gradient-secondary</div>
-                                    <div class="px-3 py-5 bg-gradient-success text-white">.bg-gradient-success</div>
-                                    <div class="px-3 py-5 bg-gradient-info text-white">.bg-gradient-info</div>
-                                    <div class="px-3 py-5 bg-gradient-warning text-white">.bg-gradient-warning</div>
-                                    <div class="px-3 py-5 bg-gradient-danger text-white">.bg-gradient-danger</div>
-                                    <div class="px-3 py-5 bg-gradient-light text-white">.bg-gradient-light</div>
-                                    <div class="px-3 py-5 bg-gradient-dark text-white">.bg-gradient-dark</div>
+                                    <div class="mb-3">
+                                        <code>.animated--fade-in</code>
+                                    </div>
+                                    <div class="small mb-1">Navbar Dropdown Example:</div>
+                                    <nav class="navbar navbar-expand navbar-light bg-light mb-4">
+                                        <a class="navbar-brand" href="#">Navbar</a>
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Dropdown
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right animated--fade-in"
+                                                    aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="small mb-1">Dropdown Button Example:</div>
+                                    <div class="dropdown mb-4">
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Dropdown
+                                        </button>
+                                        <div class="dropdown-menu animated--fade-in"
+                                            aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0 small">Note: This utility animates the CSS opacity property, meaning
+                                        it will override any existing opacity on an element being animated!</p>
                                 </div>
-                            </div> -->
+                            </div>
 
-                        <!-- </div> -->
-
-                        <!-- Third Column -->
-                        <!-- <div class="col-lg-4"> -->
-
-                            <!-- Grayscale Utilities -->
-                            <!-- <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Custom Grayscale Background Utilities
-                                    </h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="p-3 bg-gray-100">.bg-gray-100</div>
-                                    <div class="p-3 bg-gray-200">.bg-gray-200</div>
-                                    <div class="p-3 bg-gray-300">.bg-gray-300</div>
-                                    <div class="p-3 bg-gray-400">.bg-gray-400</div>
-                                    <div class="p-3 bg-gray-500 text-white">.bg-gray-500</div>
-                                    <div class="p-3 bg-gray-600 text-white">.bg-gray-600</div>
-                                    <div class="p-3 bg-gray-700 text-white">.bg-gray-700</div>
-                                    <div class="p-3 bg-gray-800 text-white">.bg-gray-800</div>
-                                    <div class="p-3 bg-gray-900 text-white">.bg-gray-900</div>
-                                </div>
-                            </div> -->
-                        <!-- </div> -->
+                        </div>
 
                     </div>
 
@@ -516,13 +333,13 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <!-- <footer class="sticky-footer bg-white">
+            <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; Your Website 2020</span>
                     </div>
                 </div>
-            </footer> -->
+            </footer>
             <!-- End of Footer -->
 
         </div>
@@ -567,5 +384,5 @@
     <script src="js/sb-admin-2.min.js"></script>
 
 </body>
-<script>listar()</script>
+
 </html>
