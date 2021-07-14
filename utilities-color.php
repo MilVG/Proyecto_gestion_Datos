@@ -1,7 +1,7 @@
 
 <?php include 'vendor/snippets/head.php'?>
-<script src="crudsolicitudes.js"></script>
-<script src="crudbienes.js"></script>
+<script src="./crudsolicitudes.js" ></script>
+<script src="./crudbienes.js" ></script>
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -289,6 +289,7 @@
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                             <form>
+                                                <input type="hidden" name="idsoli" id="idsoli" value="">
                                                 <div class="modal-header">
                                                     <div class="modal-title">
                                                         <h3>Solicitudes</h3>

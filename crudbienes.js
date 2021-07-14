@@ -9,6 +9,7 @@ function listarbienes() {
     },
   });
 }
+
 function guardarbienes() {
     var nombre = $("#txtnombrebien").val();
     var cantidad = $("#txtcantidad").val();
