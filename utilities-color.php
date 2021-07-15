@@ -226,11 +226,19 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-1 text-gray-800">Gestión de Compras</h1>
-                    <p class="mb-4">Las solicitudes deberan ser autorizadas por el jefe de Area de Lo contrario<a
-                            href="#">Revisa</a> Las diferentes secciones Mostradas deberan Ser llenadas por el administrador que este a cargo de esta área.</p>
+                     <div class="row">
+                        <code class="col-sm-4 mb-2">
+                        CREATE INDEX IDX_CUSTOMER_LAST_NAME
+                            ON SOLICITUDES (CENTRO_COSTOS);
+                            GO
+                        </code>
+                        <!-- <code class="col-sm-4">
+                        I
+                        </code> -->
+                     </div>
 
                     <!-- Content Row -->
-                    <div class="row">
+                    <div class="row mt-2">
 
                         <!-- First Column -->
                         <div class="col-lg-9">

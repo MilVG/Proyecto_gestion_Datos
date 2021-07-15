@@ -72,10 +72,10 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Compras:</h6>
-                        <a class="collapse-item " href="utilities-color.html">Inventario</a>
-                        <a class="collapse-item" href="utilities-border.html">Almacen</a>
-                        <a class="collapse-item" href="utilities-animation.html">Provedor y Bienes</a>
-                        <a class="collapse-item" href="utilities-other.html">Otros</a>
+                        <a class="collapse-item " href="utilities-color.php">Inventario</a>
+                        <a class="collapse-item" href="utilities-border.php">Almacen</a>
+                        <a class="collapse-item" href="utilities-animation.php">Provedor y Bienes</a>
+                        <a class="collapse-item" href="utilities-other.php">Ausitoría</a>
                     </div>
                 </div>
             </li>
