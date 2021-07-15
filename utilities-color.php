@@ -425,7 +425,7 @@
                                                 <input type="hidden" name="idb" id="idb" value="">
                                                 <div class="modal-header">
                                                     <div class="modal-title">
-                                                        <h3>Solicitudes</h3>
+                                                        <h3>Bienes</h3>
                                                     </div>
                                                 </div>
                                                 <div class="modal-body">
