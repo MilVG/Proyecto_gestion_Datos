@@ -376,3 +376,25 @@ SELECT * FROM historial
 GO
 
 EXEC LISTA_AUD
+
+GO
+--LA IMPLEMENTACION DEL CURSOR SIRVE PARA RETORNAR UNA SELECION DE DATOS ESPECIFICOS CON DECLARACIÓN DE VARIABLES
+CREATE PROCEDURE MICURSORNEW AS
+BEGIN
+	DECLARE @codigo int,
+			@fecha datetime,
+			@direc varchar(100)
+	DECLARE cursor_1 CURSOR
+		for select IDRESPOSABLE,FECHAENTREGA,DIRECCION from INVENTARIO
+	OPEN cursor_1
+		fetch cursor_1 INTO @codigo,@fecha,@direc
+			WHILE (@@FETCH_STATUS=0)
+				BEGIN 
+					PRINT cast(@codigo as varchar(20))+''+cast(@fecha as varchar(50))+''+cast(@direc as varchar(20))
+					FETCH cursor_1 INTO @codigo,@fecha,@direc
+				END
+	CLOSE cursor_1
+	DEALLOCATE cursor_1
+END
+
+EXEC MICURSORNEW
